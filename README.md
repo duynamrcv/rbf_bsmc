@@ -11,5 +11,5 @@ The proposed RBF-BSMC to deal with External Disturbance for a team of Multiple U
 ![result](results/rbf-bsmc-traj-side.png)
 
 ## Simulation Results and Experiment Results
-![Video demo 1](https://youtu.be/9isVgRUN_TY)
-![Video demo 2](https://youtu.be/Te03Hy-tShE)
+[Video demo 1](https://youtu.be/9isVgRUN_TY)
+[Video demo 2](https://youtu.be/Te03Hy-tShE)
