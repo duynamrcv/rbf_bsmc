@@ -1,17 +1,17 @@
 close all;
 
-ref_file = load('ref.mat');
-dis_file = load('dis.mat');
-pos_1_file = load('pos_1.mat');
-est_1_file = load('est_1.mat');
-pos_2_file = load('pos_2.mat');
-est_2_file = load('est_2.mat');
-pos_3_file = load('pos_3.mat');
-est_3_file = load('est_3.mat');
+ref_file = load('results/ref.mat');
+dis_file = load('results/dis.mat');
+pos_1_file = load('results/pos1.mat');
+est_1_file = load('results/est1.mat');
+pos_2_file = load('results/pos2.mat');
+est_2_file = load('results/est2.mat');
+pos_3_file = load('results/pos3.mat');
+est_3_file = load('results/est3.mat');
 
-pos_4_file = load('pos_4.mat');
-pos_5_file = load('pos_5.mat');
-pos_6_file = load('pos_6.mat');
+pos_4_file = load('results/pos4.mat');
+pos_5_file = load('results/pos5.mat');
+pos_6_file = load('results/pos6.mat');
 
 time = ref_file.ans.Time;
 ref = ref_file.ans.Data;
@@ -22,12 +22,25 @@ pos2 = pos_2_file.ans.Data;
 est2 = est_2_file.ans.Data;
 pos3 = pos_3_file.ans.Data;
 est3 = est_3_file.ans.Data;
-
 pos4 = pos_4_file.ans.Data;
 pos5 = pos_5_file.ans.Data;
 pos6 = pos_6_file.ans.Data;
 
+ref(:,3) = ref(:,3) + 3;
+pos1(:,3) = pos1(:,3)+3;
+pos2(:,3) = pos2(:,3)+3;
+pos3(:,3) = pos3(:,3)+3;
+pos4(:,3) = pos4(:,3)+3;
+pos5(:,3) = pos5(:,3)+3;
+pos6(:,3) = pos6(:,3)+3;
 
+csvwrite('scen2_time.csv',time);
+csvwrite('scen2_ref.csv',ref);
+csvwrite('scen2_pos1.csv',pos1);
+csvwrite('scen2_pos2.csv',pos2);
+csvwrite('scen2_pos3.csv',pos3);
+csvwrite('scen2_dis.csv',dis);
+%return;
 %% 3D trajectory
 % RBFNN
 figure();
@@ -155,6 +168,7 @@ plot(time, est3(:,1), ':k', 'LineWidth', 2,'DisplayName','UAV3');
 xlabel('Time [s]');
 ylabel('x-axis [N]');
 legend('Location', 'best');
+ylim([-5,25]);
 
 subplot(312);
 hold on; grid on;
@@ -165,6 +179,7 @@ plot(time, est3(:,2), ':k', 'LineWidth', 2,'DisplayName','UAV3');
 xlabel('Time [s]');
 ylabel('y-axis [N]');
 legend('Location', 'best');
+ylim([-5,25]);
 
 subplot(313);
 hold on; grid on;
@@ -175,6 +190,7 @@ plot(time, est3(:,3), ':k', 'LineWidth', 2,'DisplayName','UAV3');
 xlabel('Time [s]');
 ylabel('z-axis [N]');
 legend('Location', 'best');
+ylim([-5,25]);
 
 %% External disturbance
 figure();

@@ -21,7 +21,7 @@ f = [q*r*(Iy-Iz); p*r*(Iz-Ix); p*q*(Ix-Iy)];
 Ia = diag([Ix,Iy,Iz]);
 
 Uaeq = Ia*(-gammaa*(Xa_dot-Xad_dot)+Vad_dot)-f;
-Uasw = -rhoa*sg(sa) - rhoa*sa;
+Uasw = -Ia*(rhoa*sg(sa) + rhoa*sa);
 y = Uaeq+Uasw;
 end
 

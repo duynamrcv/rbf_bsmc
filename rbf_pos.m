@@ -6,6 +6,7 @@ Xp2 = u(7:9);
 
 global b alpha beta n eta
 global whatp whatp1 whatp2 mup1 mup2
+global ws ss
  
 h = zeros(n,1);
 for i = 1:n
@@ -22,5 +23,8 @@ whatp2 = whatp1;
 whatp1 = whatp;
 
 y = whatp'*h;
+
+ws = [ws, norm(whatp)];
+ss = [ss, norm(sp)];
 end
 

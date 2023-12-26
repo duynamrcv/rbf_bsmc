@@ -8,9 +8,11 @@ global lamdap gammap rhop
 global lamdaa gammaa rhoa
 global b alpha beta n eta
 global whatp whatp1 whatp2 mup1 mup2
+global ws ss
 
 Ts = 0.01;  % time step [s]
-
+ws = [];
+ss = [];
 %% Quadrotor UAV parameters
 m = 1.0;    % The mass of UAV [kg]
 g = 9.81;   % The gravity acceleratin [m/s2]
@@ -32,7 +34,7 @@ rhoa = 2;
 
 %% RBF model parameters
 n = 50;
-b = 10;
+b = 20;
 alpha = 0.2;
 beta = 0.3;
 eta = 0.2;
