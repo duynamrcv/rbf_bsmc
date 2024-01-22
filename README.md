@@ -4,6 +4,18 @@
 Vietnam National University, Hanoi, Vietnam <br>
 Fulbright University Vietnam, Ho Chi Minh City, Vietnam <br>
 
+```
+@ARTICLE{Nam2024,
+  author={Bui, Duy Nam and Phung, Manh Duong},
+  booktitle={}, 
+  title={Radial Basis Function Neural Networks for Formation Control of Unmanned Aerial Vehicles}, 
+  year={2024},
+  volume={},
+  number={},
+  pages={},
+  doi={}}
+```
+
 The proposed RBF-BSMC to deal with External Disturbance for a team of Multiple UAVs flying in Formation
 
 ## Results
