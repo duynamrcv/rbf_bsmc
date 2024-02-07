@@ -7,7 +7,7 @@ Fulbright University Vietnam, Ho Chi Minh City, Vietnam <br>
 ```
 @ARTICLE{Nam2024,
   author={Bui, Duy Nam and Phung, Manh Duong},
-  booktitle={Robotica}, 
+  journal={Robotica}, 
   title={Radial Basis Function Neural Networks for Formation Control of Unmanned Aerial Vehicles}, 
   year={Accepted},
   volume={},
