@@ -1,22 +1,30 @@
 # Radial Basis Function Neural Networks for Formation Control of Unmanned Aerial Vehicles
+The proposed RBF-BSMC to deal with External Disturbance for a team of Multiple UAVs flying in Formation. This repository presents the following article in MATLAB:
 
-### Duy Nam Bui and Manh Duong Phung
-Vietnam National University, Hanoi, Vietnam <br>
-Fulbright University Vietnam, Ho Chi Minh City, Vietnam <br>
+Duy-Nam Bui, and Manh Duong Phung, "**Radial basis function neural networks for formation control of unmanned aerial vehicles**," *Robotica*, 2024. [[**Robotica**](https://doi.org/10.1017/S0263574724000559)] [[Citation](#citation)]
 
+## Citation
 ```
-@ARTICLE{Nam2024,
-  author={Bui, Duy Nam and Phung, Manh Duong},
-  journal={Robotica}, 
-  title={Radial Basis Function Neural Networks for Formation Control of Unmanned Aerial Vehicles}, 
-  year={Accepted},
-  volume={},
-  number={},
-  pages={},
-  doi={}}
+@article{Bui2024,
+  title = {Radial basis function neural networks for formation control of unmanned aerial vehicles},
+  ISSN = {1469-8668},
+  url = {http://dx.doi.org/10.1017/S0263574724000559},
+  DOI = {10.1017/s0263574724000559},
+  journal = {Robotica},
+  publisher = {Cambridge University Press (CUP)},
+  author = {Bui,  Duy-Nam and Phung,  Manh Duong},
+  year = {2024},
+  month = apr,
+  pages = {1–19}
+}
+```
+## Installation
+```
+git clone git@github.com:duynamrcv/rbf_bsmc.git
 ```
 
-The proposed RBF-BSMC to deal with External Disturbance for a team of Multiple UAVs flying in Formation
+## Run demo
+Firstly, run file `parameter.m` to load the essential parameters. Then open `adaptive.slx` and press `Run` in the simulink.
 
 ## Results
 ### Simulation Results: [video](https://youtu.be/LYD7269n1-c?si=tZ8d34fPaQAHHizl)
