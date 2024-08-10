@@ -29,14 +29,14 @@ Firstly, run file `parameter.m` to load the essential parameters. Then open `ada
 ## Results
 ### Simulation Results: [video](https://youtu.be/LYD7269n1-c?si=tZ8d34fPaQAHHizl)
 #### Scenario 1
-<img src="results/rbf-bsmc-traj-top.png" width="600" />
-<img src="results/rbf-bsmc-traj-side.png" width="600" /> 
+| Top view | Side view |
+| :---:    |  :---:    |
+|<img src="results/rbf-bsmc-traj-top.png" height="420" />|<img src="results/rbf-bsmc-traj-side.png" height="420" /> |
 
 #### Scenario 2
-<img src="results/rbf-bsmc-traj-top2.png" width="600" />
-<img src="results/rbf-bsmc-traj-3d2.png" width="600" /> 
-
-
+| Top view | 3D view |
+| :---:    |  :---:    |
+|<img src="results/rbf-bsmc-traj-top2.png" height="400" />|<img src="results/rbf-bsmc-traj-3d2.png" height="400" /> |
 
 ### Experiment Results: [video](https://youtu.be/1yUCzWRDcp0?si=hyUxxyt6kPb2hgrZ)
 
